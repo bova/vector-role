@@ -11,10 +11,10 @@ Ansible >= 2.7
 Role Variables
 --------------
 
-|Имя|Описание|
-|====|========|
-|vector_package|Название пакета|
-|vector_version|Версия vector|
+| Имя | Описание |
+| ---- | ------- |
+| vector_package | Название пакета |
+| vector_version | Версия vector |
 
 Dependencies
 ------------
@@ -39,4 +39,4 @@ BSD
 Author Information
 ------------------
 
-Student at Netology
+Student
