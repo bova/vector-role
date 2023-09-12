@@ -1,0 +1,26 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Example assertion
+    assert:
+      that: true
+  - name: "vector-role"
+    include_role:
+      name: "vector-role"
+    
+  - name: "vector - check Vector package status"
+    package:
+      name: "vector.x86_64"
+      state: "installed"
+    check_mode: yes
+    register: pkg_status
+
+  - name: "vector - test vector package is installed"
+    assert:
+      that:
+        - not pkg_status.changed    
+     
