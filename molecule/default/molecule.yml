@@ -1,11 +1,12 @@
 ---
 driver:
-  name: docker
+  name: podman
 platforms:
   - name: centos7
     image: pycontribs/centos:7
     privileged: true
     pre_build_image: true
+
 ##  - name: ubuntu
 ##    image: pycontribs/ubuntu
 ##    privileged: true
