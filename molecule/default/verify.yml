@@ -3,7 +3,7 @@
 
 - name: Verify
   hosts: centos7
-  gather_facts: false
+  gather_facts: true
   tasks:
   - name: Example assertion
     assert:
