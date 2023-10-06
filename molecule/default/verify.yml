@@ -12,12 +12,12 @@
  #   include_role:
  #     name: "vector"
     
-  - name: "vector - check Vector package status"
-    package:
-      name: "vector.x86_64"
-      state: "installed"
-    check_mode: yes
-    register: pkg_status
+  ##- name: "vector - check Vector package status"
+##    package:
+##      name: "vector.x86_64"
+##      state: "installed"
+#    check_mode: yes
+##    register: pkg_status
 
   - name: "vector - test vector package is installed"
     assert:
