@@ -1,6 +1,6 @@
 ---
 - name: Create
-  hosts: localhost
+  hosts: centos7
   connection: local
   gather_facts: false
   # no_log: "{{ molecule_no_log }}"
