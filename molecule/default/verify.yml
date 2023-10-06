@@ -8,9 +8,9 @@
   - name: Example assertion
     assert:
       that: true
-  - name: "vector"
-    include_role:
-      name: "vector"
+ # - name: "vector"
+ #   include_role:
+ #     name: "vector"
     
   - name: "vector - check Vector package status"
     package:
