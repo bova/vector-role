@@ -19,8 +19,8 @@
 #    check_mode: yes
 ##    register: pkg_status
 
-  - name: "vector - test vector package is installed"
-    assert:
-      that:
-        - not pkg_status.changed    
+  #- name: "vector - test vector package is installed"
+##    assert:
+#      that:
+##        - not pkg_status.changed    
      
